@@ -1,1 +1,73 @@
-oi
+<%= render 'navbars/home' %>
+
+<section class="homepage-header">
+	<div class="container intro">
+		<div class="row">
+			<div class="col-lg-12 col-md-12col-sm-12 col-xs-12">
+				<h1>Ecossistema de startups do Brasil</h1>
+				<h3>A rede social do empreendedor</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<h3>457</h3>
+				<h4 class="reposition">Startups</h4>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<h3>610</h3>
+				<h4 class="reposition">Empreendedores</h4>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+				<h3>9</h3>
+				<h4 class="reposition">Núcleos</h4>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="homepage-howit">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Mais de R$<strong>10.000,00</strong> investidos online este mês </h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<%= icon('briefcase fa-5x') %>
+				<h3>Vagas</h3>
+				<p>As oportunidades nas melhores startups da sua região</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<%= icon('users fa-5x') %>
+				<h3>Perfis</h3>
+				<p>O perfil completo das startups e dos empreendedores</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<%= icon('globe fa-5x') %>
+				<h3>Nucleos</h3>
+				<p>Tenha o mapa, as startups da sua região e fomente o ecossistema local</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="homepage-midia">
+	<h2>Culture na mídia<h2>
+	<%= link_to image_tag('/img/midia/catracalivre.png'),'https://catracalivre.com.br/geral/negocio-urbanidade/indicacao/projeto-mapeia-atividade-empreendedora-no-brasil/',target: "_blank"  %>
+	<%= link_to image_tag('/img/midia/wide.png'),'http://revistawide.com.br/tecnologia/publique-sua-startup',target: "_blank"  %>
+	<%= link_to image_tag('/img/midia/startup_stars.png'),'http://revistawide.com.br/tecnologia/publique-sua-startup',target: "_blank"  %>
+	<%= link_to image_tag('/img/midia/draft.png'),'http://projetodraft.com/selecao-draft-organizando-a-informacao/',target: "_blank"  %>
+</div>
+</section>
+
+<section class="homepage-partners">
+	<h2>Nossos parceiros</h2>
+	<%= link_to image_tag('/img/partners/digital_ocean.png'),'https://www.digitalocean.com/?refcode=365573b9f27b',target: "_blank"  %>
+	<%= link_to image_tag('/img/partners/negocio_mulher_menor.png'),'http://negociodemulher.com.br/',target: "_blank"  %>
+	<%= link_to image_tag('/img/partners/mailee_me.png'),'https://www.mailee.me/pt',target: "_blank"  %>
+	<%= link_to image_tag('/img/partners/insper.png'),'http://www.insper.edu.br/?gclid=Cj0KEQiA7tCjBRDulMny5rfM0dkBEiQA7fcshbfCxZTQEvhW7qfMW8LRpWLBRZNuBPEO4hbf-p_-0jQaAsOe8P8HAQ',target: "_blank"  %>
+	<%= link_to image_tag('/img/partners/startupGarage2.png'),'http://startupgarage.com.br',target: "_blank"  %>
+	<%= link_to image_tag('/img/partners/zendesk_logo.png'),'https://www.zendesk.com.br/produto',target: "_blank"  %>
+	<%= link_to image_tag('/img/partners/contaAzul.png'),'https://contaazul.com/como-funciona',target: "_blank"  %>
+	<%= link_to image_tag('/img/partners/plug.png'),'http://plug.ae/',target: "_blank"  %>
+</section>

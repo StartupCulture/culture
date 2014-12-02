@@ -1,3 +1,143 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.homepage-header {
+  background-color: #3686BE;
+  color: #FFF;
+  float: left;
+  width: 100%;
+  position:relative;
+  margin-top: -60px;
+  min-height: 300px;
+}
+
+.intro {
+    margin: 100px auto;
+    font-family: sans-serif;
+	font-weight: 400;
+	text-rendering: optimizelegibility;
+}
+
+.intro h1{
+	font-weight: 300;
+	text-align: center;
+	margin: 70px 0px 15px;
+	font-size: 54px;
+	letter-spacing: -1.5px;
+}
+
+.intro h3{
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+.intro h4{
+	font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 6px 0px;
+    margin-top: 0px;
+}
+
+.intro .reposition{
+    margin-top:-30px;
+}
+
+.homepage-howit {
+    padding: 95px 0px 120px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.homepage-howit h2 {
+    font-weight: 100;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #454545;
+}
+
+.homepage-howit h3 {
+    color: #454545;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.homepage-howit p {
+    color: #717171;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 18px;
+}
+
+.homepage-howit i {
+    color: #919191;
+}
+
+.homepage-midia {
+    background-color: #EEF1F2;
+    padding: 95px 0px 120px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.homepage-midia h2{
+    font-weight: 100;
+    font-size: 36px;
+    color: #454545;
+}
+
+.homepage-midia img {
+    opacity: 0.4;
+    margin: 10px 15px;
+    transition: all 0.2s ease-in-out 0s;
+    filter: alpha(opacity=40);
+}
+
+.homepage-midia img:hover {
+    opacity: 1.0;
+    margin: 10px 15px;
+    transition: all 0.2s ease-in-out 0s;
+    filter: alpha(opacity=100);
+} 
+
+
+.homepage-partners {
+    padding: 95px 0px 120px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.homepage-partners h2 {
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.homepage-partners img{
+    max-width:160px;
+    opacity: 0.4;
+    margin: 10px 15px;
+    transition: all 0.2s ease-in-out 0s;
+    filter: alpha(opacity=40);
+}
+
+.homepage-partners img:hover{
+    opacity: 1.0;
+    margin: 10px 15px;
+    transition: all 0.2s ease-in-out 0s;
+    filter: alpha(opacity=100);
+} 
