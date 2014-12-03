@@ -14,4 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/public/images
+
+# Databases and logins
 /config/database.yml
+/config/social_keys_example.yml
+/config/secrets.yml
