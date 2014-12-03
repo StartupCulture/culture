@@ -10,12 +10,21 @@ gem 'devise-async'
 gem 'bootstrap-sass', '~> 3.3.0'
 gem 'font-awesome-sass', '~> 4.2.0'
 gem 'nprogress-rails'
+
+# Proccess images and save on dropbox
 gem 'paperclip'
+gem "paperclip-dropbox", ">= 1.1.7"
+
 gem 'bootstrap_form'
 gem 'geocoder'
 gem 'gmaps4rails'
 gem 'impressionist'
 gem 'shareable'
+gem 'modernizr-rails'
+
+# Login gems
+gem 'omniauth'
+gem 'omniauth-linkedin',  :git => 'git://github.com/breim/omniauth-linkedin'
 
 
 group :development do
@@ -23,7 +32,8 @@ group :development do
 	gem 'quiet_assets'
 end	
 
-#
+# ---- => 
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
