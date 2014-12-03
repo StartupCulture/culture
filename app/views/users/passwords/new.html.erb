@@ -1,0 +1,29 @@
+<div class="container login">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+
+
+			<h2><%= link_to "#{icon('rocket')} Startup Culture".html_safe, root_path %>
+			<h4>Esqueceu a senha ?</h4>
+
+
+			<%= bootstrap_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+			<%= devise_error_messages! %>
+
+			<div class="field">
+				<%= f.email_field :email, autofocus: true %>
+			</div>
+
+			<div class="actions">
+				<%= f.submit "Me envie um e-mail para trocar a senha",:class=> "btn btn-block btn-primary" %>
+			</div>
+			<% end %>
+
+
+			<div class="shared-links">
+				<%= render "users/shared/links"%>
+			</div>
+
+		</div>
+	</div>
+</div>

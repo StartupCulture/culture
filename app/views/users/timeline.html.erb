@@ -1,0 +1,46 @@
+<%= render 'navbars/user' %>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="row">
+				<div class="col-sm-6">
+					<%= image_tag @user.image.url(:small),:class => "thumbnail user-timeline-profile" %>
+				</div>
+				<div class="col-sm-6">
+					<strong><%= current_user.name %></strong>
+					<p><%= link_to "Editar perfil", edit_user_registration_path  %>
+					</div>
+				</div>
+				<ul class="list-group">
+					<%= link_to "#{icon('newspaper-o')} Feed de Notícias".html_safe,timeline_path,:class=>"list-group-item" %>
+					<%= link_to "#{icon('comments-o')} Mensagens".html_safe,timeline_path,:class=>"list-group-item" %>
+					<%= link_to "#{icon('building-o ')} Minhas Startups".html_safe,timeline_path,:class=>"list-group-item" %>
+				</ul>
+
+
+				<ul class="list-group">
+					<%= link_to "#{icon('user')} Empreendedores".html_safe,timeline_path,:class=>"list-group-item" %>
+					<%= link_to "#{icon('rocket')} Startups".html_safe,timeline_path,:class=>"list-group-item" %>
+					<%= link_to "#{icon('users')} Núcleos".html_safe,timeline_path,:class=>"list-group-item" %>
+					<%= link_to "#{icon('globe')} Mapa".html_safe,timeline_path,:class=>"list-group-item" %>
+					<%= link_to "#{icon('briefcase')} Vagas".html_safe,timeline_path,:class=>"list-group-item" %>
+				</ul>
+
+			</div>
+			<div class="col-sm-7">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-sm-1">
+								<%= image_tag @user.image.url(:tiny),:class => "timeline-tiny-image" %>
+							</div>
+							<div class="col-sm-4">
+								<strong><%= current_user.name %></strong><br />
+								<small class="text-muted">Example block-level</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

@@ -3,12 +3,14 @@
 @import "rails_bootstrap_forms";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-$nprogress-color: #fff04d;
+$nprogress-color: #fff;
 @import "nprogress";
 @import "nprogress-bootstrap";
-
 @import "pages";
 @import "navbar-home";
+@import "navbar-user";
+@import "users";
+
 
 html {
   position: relative;
@@ -17,7 +19,8 @@ html {
 
 body{
   margin-bottom: 60px;
-  margin-top:60px;
+  margin-top:40px;
+  background-color:#EEF1F2;
 }
 
 .user-container{

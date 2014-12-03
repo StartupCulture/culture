@@ -1,0 +1,45 @@
+<div class="container login">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <% flash.each do |name, msg| %>
+      <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <%= content_tag :section, msg, :id => "flash_#{name}", :class => "flash" %>
+      </div>
+      <% end %>
+
+      <h2><%= link_to "#{icon('rocket')} Startup Culture".html_safe, root_path %>
+      <h4>Bem vindo !</h4>
+      
+      <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <%- if devise_mapping.omniauthable? %>
+      <%- resource_class.omniauth_providers.each do |provider| %>
+      <%= link_to "<i class='fa fa-linkedin-square'></i> | Entrar com #{provider.to_s.titleize}".html_safe, omniauth_authorize_path(resource_name, provider),:class => "btn btn-info btn-block btn-lg" %><br />
+      <% end -%>
+      <% end -%>
+      
+      <div class="login-or">
+        <hr class="hr-or">
+        <span class="span-or">ou</span>
+      </div>
+
+      <div class="field">
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Entrar",:class=> 'btn btn-lg btn-block btn-primary' %>
+      </div>
+      <% end %>
+
+      <div class="shared-links">
+        <%= render "users/shared/links"%>
+      </div>
+      
+    </div>
+  </div>
+</div>

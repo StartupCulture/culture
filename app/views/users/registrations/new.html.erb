@@ -1,0 +1,50 @@
+<div class="container login">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+
+      <h2><%= link_to "#{icon('rocket')} Startup Culture".html_safe, root_path %>
+      <h4>Cadastro</h4>
+      <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+
+      <%- if devise_mapping.omniauthable? %>
+      <%- resource_class.omniauth_providers.each do |provider| %>
+      <%= link_to "<i class='fa fa-linkedin-square'></i> | Cadastrar com #{provider.to_s.titleize}".html_safe, omniauth_authorize_path(resource_name, provider),:class => "btn btn-info btn-block btn-lg" %><br />
+      <% end -%>
+      <% end -%>
+
+      <div class="login-or">
+        <hr class="hr-or">
+        <span class="span-or">ou</span>
+      </div>
+
+
+      <div class="field">
+        <%= f.email_field :name, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.email_field :email %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Cadastrar",:class=> "btn btn-lg btn-block btn-primary" %>
+      </div>
+      <% end %>
+
+      <div class="shared-links">
+        <%= render "users/shared/links"%>
+      </div>
+
+    </div>
+  </div>
+</div>
